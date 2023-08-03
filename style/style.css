@@ -5,69 +5,120 @@
 }
 
 html, body {
-    padding: 10px;
+
     width: 100%;
     height: 100%;
 }
 
+
+/* ---------------------------------HEADER--------------------------------- */
+
 .header {
     display: flex;
-    height: 20%;
-    width: 100%;
     background: linear-gradient(to right, #e9492a, #e72357);
     justify-content: space-between;
     align-items: center;
 }
 
 .left, .middle, .right {
-    height: 100%;
-    width: 100%;
     display: flex;
 }
 
 .header img {
-    position: absolute;
+    width: 100%;
 }
 
 .left {
-    justify-content: left;
+
 }
 
 .middle {
-    justify-content: center;
+
+    margin-bottom: -50px;
 }
 
 .right {
-    justify-content: right;
+
 }
 
 
+/* -----------------------------------------CONTEUDO------------------------------- */
+
 .conteudo {
-    display: flex;
-    justify-content: center;
-    padding: 50px;
+    width: 70%;
+    margin: 40px auto;
 }
 
 .conteudo-principal {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-.img-principal img {
-    width: 100%;
+.conteudo-principal::after {
+    content: '';
+    height: 10px;
+    width: 50%;
+    background:linear-gradient( to right, #e72357, darkblue) ;
 }
 
 .img-principal {
     width: 100%;
+    height: 50vh;
+    background-image: url(../images/img-principal.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.img-sub {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../images/nba.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+.texto-principal {
+    width: 100%;
+}
+
+h1, h2, h3 {
+    margin-top: 15px;
+}
+
+h2 {
+    font-size: 1.0em;
+
+}
+
+h3 {
+    font-size: small;
+    font-style: italic;
+    color: gray;
 }
 
 .box-sub {
-    margin-left: 80px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
 }
 
 .sub-conteudos {
     display: flex;
-    
     flex-direction: column;
-    align-items: center;
-    justify-content: right;
+    margin-bottom: 20px;
+    width: 49%;
+}
+
+.sub-conteudos:after {
+    content: '';
+    height: 10px;
+    width: 50%;
+    background:linear-gradient( to right, #e72357, darkblue) ;
 }
