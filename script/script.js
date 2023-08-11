@@ -7,7 +7,7 @@ postPrincipal = {
     titulo : 'NRF 2020: conheça os top 5 assuntos do evento.',
     subtitulo : 'O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações do setor.',
     fonte : 'CMO ADOBE',
-    gradient : ['green', 'blue'],
+    gradient : ['red', 'blue'],
 }
 
 console.log(postPrincipal.titulo)
@@ -24,8 +24,10 @@ conteudo.innerHTML+=`
 <div class="texto-principal">
     <h1>`+postPrincipal.titulo+`</h1>
     <h2>`+postPrincipal.subtitulo+`</h2>
-    <h3>`+postPrincipal.fonte+`</h3>
+    <h3>Fonte: `+postPrincipal.fonte+`</h3>    
 </div>
+<span id="color-bar"></span>
 </div>
 `
 document.getElementById("img-principal").style.backgroundImage = "url("+postPrincipal.imagem+")";
+document.getElementById("color-bar").style.background = "linear-gradient( to right," +postPrincipal.gradient[0]+","+postPrincipal.gradient[1]+")";
