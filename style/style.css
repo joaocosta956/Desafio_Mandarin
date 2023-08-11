@@ -22,6 +22,7 @@ html, body {
     justify-content: space-between;
     align-items: center;
     max-height: 25%;
+    z-index: 1;
 }
 
 .left, .middle, .right {
@@ -53,6 +54,8 @@ html, body {
 /* -----------------------------------------CONTEUDO------------------------------- */
 
 .conteudo {
+    display: flex;
+    justify-content: center;
     width: 70%;
     margin: 40px auto;
 }
@@ -60,21 +63,21 @@ html, body {
 .conteudo-principal {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     margin-bottom: 20px;
+    z-index: 10;
 }
 
 #color-bar {
     height: 10px;
     width: 50%;
-    /* background:linear-gradient( to right, #e72357, darkblue) ; */
 }
 
 #img-principal {
-    height: 50vh;
+    height: 40vh;
     overflow: hidden;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 
 }
 
