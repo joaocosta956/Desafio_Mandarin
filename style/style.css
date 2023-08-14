@@ -121,14 +121,14 @@ h3 {
 .box-sub {
    display: flex;
    flex-wrap: wrap;
-   gap: 20px;
 }
 
 .sub-conteudos {
     display: flex;
     flex-direction: column;
+    margin-right: 5%;
     margin-bottom: 20px;
-    width: 49%;
+    width: 45%;
 }
 
 .sub-conteudos:after {
@@ -142,6 +142,10 @@ h3 {
 
 @media (max-width: 768px) {
 
+    h1, h2, h3 {
+        margin-top: 5px;
+    }
+
     h1 {
         font-size: 13px;
     }
@@ -153,15 +157,9 @@ h3 {
     h3 {
         font-size: 8px;
     }
+    
     .conteudo {
         margin-top: 20px;
-    }
-
-    .conteudo-principal {
-    
-    }
-    .box-sub {
-
     }
 
     .img-sub {

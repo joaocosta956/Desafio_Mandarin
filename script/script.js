@@ -10,6 +10,30 @@ postPrincipal = {
     gradient : ['red', 'blue'],
 }
 
+subPost1 = {
+    imagem : '',
+    titulo : 'Petição para colocar Kobe Bryant no logo da NBA.',
+    subtitulo : '',
+    fonte : 'Daily Mail',
+    gradient : [],
+}
+
+subPost2 = {
+    imagem : '',
+    titulo : 'WhatsApp terá função de pagamentos em 2020.',
+    subtitulo : '',
+    fonte : 'Proxxima',
+    gradient : [],
+}
+
+subPost3 = {
+    imagem : '',
+    titulo : '',
+    subtitulo : '',
+    fonte : '',
+    gradient : [],
+}
+
 console.log(postPrincipal.titulo)
 
 conteudo = document.querySelector('.conteudo')
@@ -27,35 +51,26 @@ conteudo.innerHTML+=`
 </div>
 <span id="color-bar"></span>
 </div>
+
+
 <div class="box-sub">
 <div class="sub-conteudos">            
     <div class="img-sub">
     </div>
     <div class="texto-principal">
-        <h1>NRF 2020: conheça os top 5 assuntos do evento.</h1>
-        <h2>O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações do setor.</h2>
-        <h3>Fonte: CMO ADOBE</h3>
+        <h1>`+subPost1.titulo+`</h1>
+        <h3>Fonte: `+subPost1.fonte+`</h3>
     </div>
 </div>
 <div class="sub-conteudos">            
     <div class="img-sub">
     </div>
     <div class="texto-principal">
-        <h1>NRF 2020: conheça os top 5 assuntos do evento.</h1>
-        <h2>O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações do setor.</h2>
-        <h3>Fonte: CMO ADOBE</h3>
+        <h1>`+subPost2.titulo+`</h1>
+        <h3>Fonte: `+subPost2.fonte+`</h3>
     </div>
 </div>
 
-<div class="sub-conteudos">            
-    <div class="img-sub">
-</div>
-<div class="texto-principal">
-    <h1>NRF 2020: conheça os top 5 assuntos do evento.</h1>
-    <h2>O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações do setor.</h2>
-    <h3>Fonte: CMO ADOBE</h3>
-</div>
-</div>
 </div> 
 `
 document.getElementById("img-principal").style.backgroundImage = "url("+postPrincipal.imagem+")";
