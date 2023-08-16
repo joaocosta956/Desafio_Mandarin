@@ -11,6 +11,7 @@ postPrincipal = {
 }
 
 subPost1 = {
+    id : '0',
     imagem : '',
     titulo : 'Petição para colocar Kobe Bryant no logo da NBA.',
     subtitulo : '',
@@ -19,7 +20,8 @@ subPost1 = {
 }
 
 subPost2 = {
-    imagem : '',
+    id : '1',
+    imagem : main+'images/nba.png',
     titulo : 'WhatsApp terá função de pagamentos em 2020.',
     subtitulo : '',
     fonte : 'Proxxima',
@@ -27,6 +29,7 @@ subPost2 = {
 }
 
 subPost3 = {
+    id : '2',
     imagem : '',
     titulo : '',
     subtitulo : '',
@@ -55,21 +58,25 @@ conteudo.innerHTML+=`
 
 <div class="box-sub">
 <div class="sub-conteudos">            
-    <div class="img-sub">
+    <div class="img-sub one">
     </div>
     <div class="texto-principal">
         <h1>`+subPost1.titulo+`</h1>
         <h3>Fonte: `+subPost1.fonte+`</h3>
     </div>
+    <span id="color-bar"></span>
 </div>
 <div class="sub-conteudos">            
-    <div class="img-sub">
+    <div id="sub-image`+subPost1.id+`">
+        <img src="`+subPost2.imagem+`">
     </div>
     <div class="texto-principal">
         <h1>`+subPost2.titulo+`</h1>
         <h3>Fonte: `+subPost2.fonte+`</h3>
     </div>
+    <span id="color-bar"></span>
 </div>
+
 
 </div> 
 `
