@@ -1,12 +1,10 @@
 
-main = '../'
-
 
 // POSTS -------------------------------------------
 
 postPrincipal = {
     id : '0',
-    imagem : main+'images/img-principal.png',
+    imagem : 'images/img-principal.png',
     titulo : 'NRF 2020: conheça os top 5 assuntos do evento.',
     subtitulo : 'O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações do setor.',
     fonte : 'CMO ADOBE',
@@ -15,7 +13,7 @@ postPrincipal = {
 
 subPost1 = {
     id : '1',
-    imagem : main+'images/nba.png',
+    imagem : 'images/nba.png',
     titulo : 'Petição para colocar Kobe Bryant no logo da NBA.',
     subtitulo : '',
     fonte : 'Daily Mail',
@@ -24,7 +22,7 @@ subPost1 = {
 
 subPost2 = {
     id : '2',
-    imagem : main+'images/whats.png',
+    imagem : 'images/whats.png',
     titulo : 'WhatsApp terá função de pagamentos em 2020.',
     subtitulo : '',
     fonte : 'Proxxima',
