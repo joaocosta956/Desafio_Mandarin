@@ -28,7 +28,7 @@ subPost2 = {
     titulo : 'WhatsApp terá função de pagamentos em 2020.',
     subtitulo : '',
     fonte : 'Proxxima',
-    gradient : [],
+    gradient : ['#75c7cf','#3ab38a'],
 }
 
 subPost3 = {
@@ -96,3 +96,4 @@ document.getElementById("sub-image2").style.backgroundImage = "url("+subPost2.im
 
 document.getElementById("color-bar0").style.background = "linear-gradient( to right," +postPrincipal.gradient[0]+","+postPrincipal.gradient[1]+")";
 document.getElementById("color-bar1").style.background = "linear-gradient( to right," +subPost1.gradient[0]+","+subPost1.gradient[1]+")";
+document.getElementById("color-bar2").style.background = "linear-gradient( to right," +subPost2.gradient[0]+","+subPost2.gradient[1]+")";
