@@ -141,6 +141,20 @@ footer {
     align-items: center;
 }
 
+.text-footer {
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.text-footer a, p{
+    font-size: small;
+    color: #74787a;
+    text-align: center;
+}
+
+.text-footer a {
+    text-decoration: underline;
+}
 
 
 
