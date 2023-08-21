@@ -84,11 +84,6 @@ conteudo.innerHTML+=`
 
 </div> 
 
-<footer>
-<div class="banner-footer">
-    <img src="assets/footer-banner.png" alt="">
-</div>
-</footer>  
 `
 
 // IMAGENS ---------------------------------------------------------------
