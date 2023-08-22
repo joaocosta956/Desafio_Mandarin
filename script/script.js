@@ -10,7 +10,7 @@ postPrincipal = {
     fonte : 'CMO ADOBE',
     gradient : ['#e62259', '#6c5aa2'],
 }
-
+ 
 subPost1 = {
     id : '1',
     imagem : 'images/nba.png',
@@ -96,3 +96,8 @@ document.getElementById("sub-image2").style.backgroundImage = "url("+subPost2.im
 document.getElementById("color-bar0").style.background = "linear-gradient( to right," +postPrincipal.gradient[0]+","+postPrincipal.gradient[1]+")";
 document.getElementById("color-bar1").style.background = "linear-gradient( to right," +subPost1.gradient[0]+","+subPost1.gradient[1]+")";
 document.getElementById("color-bar2").style.background = "linear-gradient( to right," +subPost2.gradient[0]+","+subPost2.gradient[1]+")";
+
+// LARGURA BARRA ---------------------------------------------------------
+
+document.getElementById("color-bar1").style.width = "60%";
+document.getElementById("color-bar2").style.width = "60%";

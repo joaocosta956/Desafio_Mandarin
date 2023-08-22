@@ -11,6 +11,9 @@ html, body {
     height: 100%;
 }
 
+section {
+    display: inline;
+}
 
 /* ---------------------------------HEADER--------------------------------- */
 
@@ -61,6 +64,8 @@ html, body {
     margin: 40px auto;
 }
 
+/* -----------------------------------------CONTEUDO-PRINCIPAL------------------------------ */
+
 .conteudo-principal {
     width: 100%;
     display: flex;
@@ -76,24 +81,13 @@ html, body {
 }
 
 #img-principal {
-    height: 50svh;
+    height: 50vh;
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
 }
-
-
-.img-sub {
-    width: 100%;
-    height: 50vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
-
 
 h1, h2, h3 {
     margin-top: 15px;
@@ -116,18 +110,36 @@ h3 {
     color: gray;
 }
 
+
+/* ----------------------------------------SUB-CONTEUDO------------------------------- */
+
+
+.img-sub {
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
 .box-sub {
    display: flex;
    flex-wrap: wrap;
+   justify-content: space-between;
 }
 
 .sub-conteudos {
     display: flex;
     flex-direction: column;
-    margin-right: 5%;
     margin-bottom: 20px;
-    width: 45%;
+    width: 48%;
 }
+
+
+
+/* -----------------------------------------FOOTER------------------------------- */
+
 
 footer {
     width: 100%;
@@ -182,6 +194,10 @@ footer {
     
     .conteudo {
         margin-top: 20px;
+    }
+
+    .color-bar {
+        height: 3px;
     }
 
     .img-sub {
